@@ -1,0 +1,6 @@
+ksp_filelibrary.redirect_service_configs:
+  title: 'Redirect service configuration'
+  route_name: ksp_filelibrary.redirect_service_configs
+  description: 'Redirect service configuration form'
+  parent: system.admin_config
+  weight: 99

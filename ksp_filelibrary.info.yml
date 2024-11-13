@@ -1,0 +1,10 @@
+name: KSP FileLibrary
+description: 'Imports zip file and add its content to redirect solution.'
+package: KSP
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:rest
+  - drupal:file
+  - drupal:basic_auth

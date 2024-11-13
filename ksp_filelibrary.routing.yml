@@ -1,0 +1,9 @@
+ksp_filelibrary.redirect_service_configs:
+  path: '/admin/config/redirect_service'
+  defaults:
+    _form: '\Drupal\ksp_filelibrary\Form\RedirectServiceConfigForm'
+    _title: 'Redirect service configuration'
+  requirements:
+    _permission: 'configure redirect service'
+  options:
+    _admin_route: TRUE

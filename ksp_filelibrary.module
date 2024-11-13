@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * KSP FileLibrary module.
+ */
+
+/**
+ * Implements hook_views_post_execute().
+ */
+function ksp_filelibrary_views_post_execute($view) {
+  if ($view->id() == 'supplfiles' && $view->current_display == 'rest_export_1') {
+    foreach ($view->result as $key => $value) {
+      if (!empty($value->_entity->field_reference_url->value) &&
+          empty($value->_relationship_entities)) {
+        unset($view->result[$key]);
+      }
+    }
+  }
+}
